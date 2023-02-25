@@ -1,13 +1,14 @@
-import Alerts from '@/components/Alerts';
+import Slider from '@/components/Slider';
 
 const components = () => {
   return (
     <div>
-      {/* <LikeButton active={isActive} onClick={handleState} /> */}
       {/* <CategoryButton /> */}
       {/* <MainButton /> */}
       {/* <EventCard /> */}
-      <Alerts />
+      {/* <Alerts /> */}
+      {/* <MainButton /> */}
+      <Slider />
     </div>
   );
 };

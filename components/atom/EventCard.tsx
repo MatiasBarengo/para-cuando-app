@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import { useState } from 'react';
 import swal from 'sweetalert';
 import LikeButton from '../assets/LikeButton';
 
 const EventCard = () => {
   const [isActive, setActive] = useState(false);
+
   const handleState = () => {
     setActive(!isActive);
     if (isActive === false) {
@@ -26,26 +26,21 @@ const EventCard = () => {
 
   return (
     <div className="flex flex-col justify-start w-[299px] h-[454px] rounded-[20px] bg-white shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
-      <Image
-        width="239"
-        height="299"
-        src="/"
-        alt="event-image"
-        className="rounded-t-[20px] overflow-hidden"
-      />
+      <img className="w-full h-[239px] rounded-t-[20px]" src="" alt="" />
       <LikeButton active={isActive} onClick={handleState} />
-      <h2 className="pt-[15px] px-[22px] text-[20px] text-left font-semibold">
+      <h2 className="pt-[15px] px-[22px] text-[20px] text-left text-light-black font-semibold">
         Concierto de Lady Gaga
       </h2>
       <div className="px-[22px] pt-[5px] h-[80px]">
-        <h3 className="text-left text-[#6E6A6C] text-[15px] ">
+        <h3 className="text-left text-dark-gray text-[15px] ">
           El concierto con la tematica de Lady Gaga en Las Vegas
         </h3>
       </div>
       <a
         href="https://ladygaga.com"
-        className="text-[#1B4DB1] font-semibold text-[14px] pl-[27px]"
+        className="text-primary font-semibold text-[14px] pl-[27px]"
         target="_blank"
+        rel="noreferrer"
       >
         ladygaga.com
       </a>
