@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+/*import Link from 'next/link';*/
 import heroImg from '../../public/png/hero.png';
 import logo from '../../public/png/logo.png';
 import Button from '../atom/CategoryButton';
@@ -21,6 +21,9 @@ const categories: Array<Category> = [
 ];
 
 export default function Hero() {
+  const handleClick = (category: Category) => {
+    console.log(`Clicked on category ${category.title}`);
+  };
   return (
     <section
       style={styles}
@@ -29,16 +32,11 @@ export default function Hero() {
       <Image src={logo} alt="para cuando logo" className="mb-12" />
       <Input />
       <ul className="flex justify-between items-center w-full mt-10 max-w-[425px]">
-        {categories.map((categorie) => (
-          <li key={categorie.id}>
-            <Link
-              href={{
-                pathname: '/categories/[slug]',
-                query: { slug: categorie.title },
-              }}
-            >
-              <Button></Button>
-            </Link>
+        {categories.map((category) => (
+          <li key={category.id}>
+            <Button onClick={() => handleClick(category)}>
+              {category.title}
+            </Button>
           </li>
         ))}
       </ul>
