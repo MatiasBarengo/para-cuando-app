@@ -1,39 +1,62 @@
+import Slider from './Slider';
+
 export default function Main() {
+  // interface Category {
+  //   title: string;
+  //   id: number;
+  // }
+
+  // const categories: Array<Category> = [
+  //   { title: 'Marcas y tiendas', id: 1 },
+  //   { title: 'Artistas y conciertos', id: 2 },
+  //   { title: 'Torneos', id: 3 },
+  // ];
+
   return (
-    <main className="mt-5">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-      inventore, vel eaque, cumque officiis neque quasi odio voluptas pariatur
-      esse dolorem nulla reprehenderit dicta nihil harum facilis culpa
-      voluptatem saepe? Accusantium illum possimus ea sunt, sed dolorum id
-      eveniet perferendis necessitatibus quidem commodi expedita rem iusto
-      veniam quasi et vel magnam quod voluptatum. Odio cupiditate consectetur
-      nulla soluta deserunt rem. Exercitationem, illo optio porro sunt aperiam
-      nesciunt ut asperiores doloremque dolorem, magnam, in nulla rem nobis
-      quasi officia tenetur. Tempore alias inventore quaerat delectus.
-      Voluptates voluptatibus ullam veniam laboriosam error! Iste culpa
-      accusantium consequatur eaque error labore perferendis expedita, molestias
-      laboriosam eligendi officiis quos. Ipsum cupiditate dolores quo aliquam
-      hic accusamus nisi, quaerat itaque consectetur velit quos eligendi dolorem
-      consequuntur. Expedita autem laborum harum reprehenderit ipsum? Nam
-      architecto perspiciatis, est soluta eum quia, vero neque, vitae fuga quasi
-      doloremque modi magni consequatur velit adipisci! Culpa, vel neque.
-      Exercitationem, harum velit! Sit soluta culpa nisi labore hic modi
-      accusantium inventore ducimus, omnis, unde aut autem doloremque a nam
-      quibusdam. Ea alias at fugit, adipisci quasi quis quam cupiditate eius
-      deserunt repellendus! Nihil voluptas praesentium voluptate assumenda
-      doloremque debitis vero odit. Exercitationem, corrupti rem sint harum
-      voluptatem cumque ipsa enim! Rem quo quas aspernatur sint voluptatibus
-      tempora adipisci repellat perspiciatis facilis nesciunt. Modi eveniet
-      eaque ratione blanditiis eligendi natus tempore! Perspiciatis officia
-      atque incidunt, tempore, autem molestiae velit eius commodi, aliquid non
-      maiores! Inventore, iste molestias corrupti distinctio ullam eum natus
-      est! Illum adipisci consequuntur repudiandae. Corrupti consequatur
-      obcaecati commodi, asperiores natus repellendus mollitia omnis magni
-      voluptas molestias vel voluptatem exercitationem alias veritatis impedit
-      assumenda suscipit cumque, harum quibusdam est? Eos, in? Ducimus dolorum
-      molestiae officia! Quasi deserunt eos tempore incidunt illum magnam et.
-      Eligendi totam fugit voluptates, iusto similique, beatae nam ea labore
-      incidunt quisquam aperiam ipsa sint, iste iure est.
+    <main className="mt-[67px] w-[full] h-full flex flex-col justify-center items-center">
+      <section className="mt-5">
+        <h2 className="text-[24px] font-medium text-light-black text-left">
+          Populares en Queretaro
+        </h2>
+        <h4 className="text-dark-gray mb-[35px]">
+          Lo que las personas piden mas
+        </h4>
+        <Slider />
+      </section>
+      <section className="mt-5">
+        <h2 className="text-[24px] font-medium text-light-black text-left">
+          Sugerencias para ti
+        </h2>
+        <h4 className="text-dark-gray mb-[35px]">
+          Publicaciones que podrias colaborar
+        </h4>
+        <Slider />
+      </section>
+      <section className="w-full h-[250px] flex justify-center items-center">
+        <div className="w-[70vw] h-full bg-lighter-gray">
+          <h2>¡Hagámoslo más personal!</h2>
+          <p>
+            Selecciona tus intereses para brindarte sugerencias de acuerdo a tus
+            gustos
+          </p>
+          {/* <ul className="flex justify-center gap-[30px] items-center w-full mt-10 max-w-[425px]">
+            {categories.map((category) => (
+              <li key={category.id}>
+                
+              </li>
+            ))}
+          </ul> */}
+        </div>
+      </section>
+      <section className="mt-5 mb-[114px]">
+        <h2 className="text-[24px] font-medium text-light-black text-left">
+          Recientes
+        </h2>
+        <h4 className="text-dark-gray mb-[35px]">
+          Las personas últimamente están hablando de esto
+        </h4>
+        <Slider />
+      </section>
     </main>
   );
 }

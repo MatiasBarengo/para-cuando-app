@@ -24,24 +24,26 @@ export default function Hero() {
   return (
     <section
       style={styles}
-      className="h-[488px] px-5 bg-cover bg-none bg-center flex items-center justify-center  flex-col "
+      className="h-[488px] w-full px-5 bg-cover bg-none bg-center flex items-center justify-center flex-col "
     >
-      <Image src={logo} alt="para cuando logo" className="mb-12" />
-      <Input />
-      <ul className="flex justify-between items-center w-full mt-10 max-w-[425px]">
-        {categories.map((categorie) => (
-          <li key={categorie.id}>
-            <Link
-              href={{
-                pathname: '/categories/[slug]',
-                query: { slug: categorie.title },
-              }}
-            >
-              <Button></Button>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="flex flex-col justify-center items-center">
+        <Image src={logo} alt="para cuando logo" className="mb-12" />
+        <Input />
+        <ul className="flex justify-center gap-[30px] items-center w-full mt-10 max-w-[425px]">
+          {categories.map((category) => (
+            <li key={category.id}>
+              <Link
+                href={{
+                  pathname: '/categories/[slug]',
+                  query: { slug: category.title },
+                }}
+              >
+                <Button title={category.title}></Button>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

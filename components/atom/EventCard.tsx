@@ -26,7 +26,11 @@ const EventCard = () => {
 
   return (
     <div className="flex flex-col justify-start w-[299px] h-[454px] rounded-[20px] bg-white shadow-[0_2px_4px_rgba(0,0,0,0.25)]">
-      <img className="w-full h-[239px] rounded-t-[20px]" src="" alt="" />
+      <img
+        className="w-full h-[239px] rounded-t-[20px]"
+        src="https://los40es00.epimg.net/los40/imagenes/2017/02/06/musica/1486367147_194336_1486369812_noticia_normal.jpg"
+        alt=""
+      />
       <LikeButton active={isActive} onClick={handleState} />
       <h2 className="pt-[15px] px-[22px] text-[20px] text-left text-light-black font-semibold">
         Concierto de Lady Gaga

@@ -1,14 +1,14 @@
-import Slider from '@/components/Slider';
+import CategoryButton from '@/components/atom/CategoryButton';
 
 const components = () => {
   return (
     <div>
-      {/* <CategoryButton /> */}
+      <CategoryButton />
       {/* <MainButton /> */}
       {/* <EventCard /> */}
       {/* <Alerts /> */}
       {/* <MainButton /> */}
-      <Slider />
+      {/* <Slider /> */}
     </div>
   );
 };
