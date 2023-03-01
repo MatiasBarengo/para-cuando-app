@@ -1,17 +1,6 @@
 import Slider from './Slider';
 
 export default function Main() {
-  // interface Category {
-  //   title: string;
-  //   id: number;
-  // }
-
-  // const categories: Array<Category> = [
-  //   { title: 'Marcas y tiendas', id: 1 },
-  //   { title: 'Artistas y conciertos', id: 2 },
-  //   { title: 'Torneos', id: 3 },
-  // ];
-
   return (
     <main className="mt-[67px] w-[full] h-full flex flex-col justify-center items-center">
       <section className="mt-5">
@@ -39,13 +28,6 @@ export default function Main() {
             Selecciona tus intereses para brindarte sugerencias de acuerdo a tus
             gustos
           </p>
-          {/* <ul className="flex justify-center gap-[30px] items-center w-full mt-10 max-w-[425px]">
-            {categories.map((category) => (
-              <li key={category.id}>
-                
-              </li>
-            ))}
-          </ul> */}
         </div>
       </section>
       <section className="mt-5 mb-[114px]">
