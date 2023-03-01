@@ -3,7 +3,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import EventCard from '../atom/EventCard';
 
 const Slider = () => {
@@ -21,8 +21,10 @@ const Slider = () => {
   }
 
   return (
-    <div>
+    <div className="relative">
       <Swiper
+        style={{ position: 'unset' }}
+        slidesPerView={'auto'}
         className="w-[70vw] h-[500px] "
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -30,7 +32,7 @@ const Slider = () => {
           // when window width is >= 640px
           640: {
             width: 640,
-            slidesPerView: 1,
+            slidesPerView: 1.2,
           },
           // when window width is >= 768px
           768: {
@@ -42,11 +44,12 @@ const Slider = () => {
             slidesPerView: 3,
           },
         }}
-        navigation
-        pagination
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
+        <div className="absolute top-0 -right-20 z-20">
+          <RightArrow />
+        </div>
         {slides}
       </Swiper>
     </div>
@@ -54,3 +57,8 @@ const Slider = () => {
 };
 
 export default Slider;
+
+const RightArrow = () => {
+  const swiper = useSwiper();
+  return <button onClick={() => swiper.slidePrev()}>Next</button>;
+};
