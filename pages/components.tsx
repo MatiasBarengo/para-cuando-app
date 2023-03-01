@@ -1,9 +1,7 @@
-import CategoryButton from '@/components/atom/CategoryButton';
-
 const components = () => {
   return (
     <div>
-      <CategoryButton />
+      {/* <CategoryButton /> */}
       {/* <MainButton /> */}
       {/* <EventCard /> */}
       {/* <Alerts /> */}
