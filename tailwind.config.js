@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#1B4DB1',
-        'disabled': '#A7A6A7',
-        'white': '#ffffff',
-        'gray': '#A7A6A7',
+        primary: '#1B4DB1',
+        disabled: '#A7A6A7',
+        'app-white': '#ffffff',
+        gray: '#A7A6A7',
         'dark-gray': '#6E6A6C',
         'light-black': '#1A1E2E',
-        'lighter-gray': '#F8F7FA'
+        'lighter-gray': '#F8F7FA',
       },
     },
     screens: {
