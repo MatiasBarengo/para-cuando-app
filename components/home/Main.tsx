@@ -1,3 +1,4 @@
+import MakeItPersonal from '../MakeItPersonal';
 import Slider from './Slider';
 
 export default function Main() {
@@ -21,15 +22,7 @@ export default function Main() {
         </h4>
         <Slider />
       </section>
-      <section className="w-full h-[250px] flex justify-center items-center">
-        <div className="w-[70vw] h-full bg-lighter-gray">
-          <h2>¡Hagámoslo más personal!</h2>
-          <p>
-            Selecciona tus intereses para brindarte sugerencias de acuerdo a tus
-            gustos
-          </p>
-        </div>
-      </section>
+      <MakeItPersonal />
       <section className="mt-5 mb-[114px]">
         <h2 className="text-[24px] font-medium text-light-black text-left">
           Recientes
