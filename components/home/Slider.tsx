@@ -21,36 +21,39 @@ const Slider = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative max-[1024px]:">
       <Swiper
         style={{ position: 'unset' }}
         slidesPerView={'auto'}
         className="w-[70vw] h-[500px] "
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={3}
         breakpoints={{
           // when window width is >= 640px
-          640: {
-            width: 640,
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
+          600: {
             slidesPerView: 1.2,
+            spaceBetween: 30,
           },
-          // when window width is >= 768px
-          768: {
-            width: 768,
-            slidesPerView: 2,
+          1050: {
+            slidesPerView: 2.2,
+            spaceBetween: 30,
           },
-          1024: {
-            width: 1024,
+          1500: {
             slidesPerView: 3,
+            spaceBetween: 30,
           },
         }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
       >
-        <div className="absolute top-[50%] -right-20 z-20">
+        <div className="absolute top-[50%] -right-20 z-20 hidden sm:inline-block">
           <RightArrow />
         </div>
-        <div className="absolute top-[50%] -left-[2rem] z-20">
+        <div className="absolute top-[50%] -left-[2rem] z-20 hidden sm:inline-block ">
           <LeftArrow />
         </div>
         {slides}
