@@ -15,6 +15,8 @@ module.exports = {
         'dark-gray': '#6E6A6C',
         'light-black': '#1A1E2E',
         'lighter-gray': '#F8F7FA',
+        'yellow': '#F3F243',
+        'gray-border': '#7D7D7D'
       },
     },
     screens: {

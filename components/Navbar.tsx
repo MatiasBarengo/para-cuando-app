@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="flex items-center gap-2 sm:mr-9">
         <Image src={addLogo} alt="add logo" />
         <Link
-          href="/posts/create"
+          href="/post/create"
           className="hidden text-2 sm:subtitle-2  text-white xs:block"
         >
           {' '}
