@@ -6,7 +6,7 @@ import { useState } from 'react';
 import logo from '../../public/png/formLogo.png';
 import logo2 from '../../public/png/formLogo2.png';
 
-const create = () => {
+const Create = () => {
   const [formStep, setFormStep] = useState(0);
 
   const handleStep = () => {
@@ -126,4 +126,4 @@ const create = () => {
   );
 };
 
-export default create;
+export default Create;
