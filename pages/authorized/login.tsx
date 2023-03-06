@@ -1,17 +1,16 @@
 import Head from 'next/head';
 import Background from '../../components/authorized/Background';
-import RegisterModal from '../../components/authorized/RegisterModal';
+import LoginModal from '../../components/authorized/LoginModal';
 
-export default function register() {
+export default function Login() {
   return (
     <>
       <Head>
-        <title>Sign Up - Para Cuándo</title>
+        <title>Log In - Para Cuándo</title>
         <meta name="description" content="description" />
       </Head>
-
       <Background>
-        <RegisterModal />
+        <LoginModal />
       </Background>
     </>
   );

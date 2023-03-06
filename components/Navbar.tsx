@@ -20,7 +20,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex gap-5 text-xs text-white sm:subtitle-2">
-        <Link href="/auth/login">Log in</Link>
+        <Link href="/authorized/login">Log in</Link>
         <Link href="/authorized/register">Sign Up</Link>
       </div>
     </div>
