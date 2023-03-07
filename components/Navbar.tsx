@@ -13,13 +13,13 @@ export default function Navbar() {
         <Image src={addLogo} alt="add logo" />
         <Link
           href="/posts/create"
-          className="hidden text-2 sm:subtitle-2  text-white xs:block"
+          className="hidden text-2 sm:subtitle-2  text-app-blue xs:block"
         >
           {' '}
           Crear Publicación
         </Link>
       </div>
-      <div className="flex gap-5 text-xs text-white sm:subtitle-2">
+      <div className="flex gap-5 text-2 text-app-white sm:subtitle-2">
         <Link href="/authorized/login">Log in</Link>
         <Link href="/authorized/register">Sign Up</Link>
       </div>
