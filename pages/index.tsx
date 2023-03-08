@@ -24,7 +24,7 @@ const Home: NextPageWithLayout = () => {
             Sugerencias para ti
           </h2>
           <h4 className="text-dark-gray mb-[35px]">
-            Publicaciones que podrias colaborar
+            Publicaciones que podrías colaborar
           </h4>
           <Slider />
         </section>

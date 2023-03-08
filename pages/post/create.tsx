@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import logo from '../../public/png/formLogo.png';
-import logo2 from '../../public/png/formLogo2.png';
 
 const Create = () => {
   const [formStep, setFormStep] = useState(0);
@@ -33,8 +31,20 @@ const Create = () => {
       <header className="flex flex-col w-[100vw] h-[306px] bg-primary px-[25px] md:w-[255px] md:h-[100vh] md:justify-center items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <Image src={logo} alt="para cuando logo1" className="mt-12" />
-            <Image src={logo2} alt="para cuando logo2" className="mb-12" />
+            <Image
+              width={137}
+              height={123}
+              src="/png/formLogo.png"
+              alt="para cuando logo1"
+              className="mt-12"
+            />
+            <Image
+              width={144}
+              height={32}
+              src="/png/formLogo2.png"
+              alt="para cuando logo2"
+              className="mb-12"
+            />
           </Link>
         </div>
 
