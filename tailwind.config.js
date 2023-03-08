@@ -26,6 +26,8 @@ module.exports = {
         'app-grayLight': '#D9D9D9',
         'app-grayLighter': '#F8F7FA',
         'lighter-gray': '#F8F7FA',
+        'yellow': '#F3F243',
+        'gray-border': '#7D7D7D'
       },
       boxShadow: {
         shadow1: '0 2px 4px 0px rgba(0, 0, 0, 0.25)',
